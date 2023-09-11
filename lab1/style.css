@@ -1,3 +1,47 @@
-.hf {
-    
+main {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'courier new', sans-serif;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    margin: auto;
+    font-size: 18px;
+    font-family:  helvetica, arial, sans-serif;
+}
+
+#link {
+    text-align: center;
+}
+
+#fucking_main {
+    background-color: blue;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-family: helvetica, arial sans-serif;
+}
+
+#figure {
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-start-start-radius: 20% 20%;
+    border-end-end-radius: 20% 20%;
+    margin: 10px;
+    float: left;
 }
