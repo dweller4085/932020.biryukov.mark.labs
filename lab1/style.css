@@ -1,3 +1,12 @@
+html * {
+    font-family: arial;
+    color: white;
+}
+
+body {
+    margin: 0px;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -6,21 +15,18 @@ main {
 header {
     background-color: green;
     text-align: center;
-    color: white;
     padding: 7px;
     margin: auto;
     font-size: 18px;
-    font-family: 'courier new', sans-serif;
+    font-family: 'courier new';
 }
 
 footer {
     background-color: green;
     text-align: center;
-    color: white;
     padding: 7px;
     margin: auto;
     font-size: 18px;
-    font-family:  helvetica, arial, sans-serif;
 }
 
 #link {
@@ -32,13 +38,11 @@ footer {
     width: 500px;
     padding-left: 20px;
     padding-right: 20px;
-    color: white;
-    font-family: helvetica, arial sans-serif;
 }
 
 #figure {
-    height: 100px;
-    width: 100px;
+    height: 96px;
+    width: 96px;
     border: 5px solid white;
     border-start-start-radius: 15% 15%;
     border-end-end-radius: 20% 20%;
