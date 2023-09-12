@@ -1,3 +1,7 @@
+li:not(:last-child) { 
+   margin-bottom: 3px;  
+}
+
 html * {
     font-family: arial;
     color: white;
