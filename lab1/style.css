@@ -1,6 +1,13 @@
-li:not(:last-child) { 
+ul > li:not(:last-child) { 
    margin-bottom: 3px;  
 }
+
+#vis_styles > p {
+    font-size: 20px;
+    margin: .4em;
+}
+
+
 
 html * {
     font-family: arial;
@@ -19,7 +26,7 @@ main {
 header {
     background-color: green;
     text-align: center;
-    padding: 7px;
+    padding: 9px;
     margin: auto;
     font-size: 18px;
     font-family: 'courier new';
@@ -28,7 +35,7 @@ header {
 footer {
     background-color: green;
     text-align: center;
-    padding: 7px;
+    padding: 9px;
     margin: auto;
     font-size: 18px;
 }
