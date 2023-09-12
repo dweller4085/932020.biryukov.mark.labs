@@ -4,10 +4,8 @@ ul > li:not(:last-child) {
 
 #vis_styles > p {
     font-size: 20px;
-    margin: .4em;
+    margin: 0 0 .4em 0;
 }
-
-
 
 html * {
     font-family: arial;
