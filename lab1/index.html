@@ -4,8 +4,8 @@
 	<meta charset='utf-8'>
     <meta name='author' content='mkb'>
     <base href='.'>
-    <link rel='stylesheet' type='text/css' href='style.css'/>
-    <link rel='icon' href='content/thumbs_up.png'/>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='icon' href='content/thumbs_up.png'>
 	<title>lab1</title>
 </head>
 <body>
@@ -18,11 +18,11 @@
             <p style='font-size: 18px'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </section>
         </div>
-        <div id='link'>
-        <nav>
+        
+        <div id='link'><nav>
             <a style='color: red' href='http://www.csd.tsu.com'>www.csd.tsu.ru</a>
-        </nav>
-        </div>
+        </nav></div>
+        
         <div id='list'>
             <h2 style='word-spacing: .4em; margin-bottom: -8px'><span style='color: red'>here</span> is the list:</h2>
             <ul>
@@ -31,6 +31,27 @@
                 <li>value 3</li>
             </ul>
         </div>
+        
+        <div id='table_and_icon'>
+            <table style='border: solid 1px silver;'>
+                <tr>
+                    <td rowspan='2' style='background-color:green;'>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td colspan='2' style='background-color:red;'>7</td>
+                </tr>
+            </table>
+            
+            <img style='float:right; margin-top: 10px;' src='content/thumbs_up.png' alt='thumbs_up.png'>
+        </div>
+        
         <div id='vis_styles'>
             <h3 style='font-weight: bold; margin-bottom: .5em'>here are some visual styles:</h3>
             <p ><i>italic</i></p>
@@ -38,9 +59,8 @@
             <p><u>underlined</u></p>
             <p style='margin-top: 1em'><del>line through</del></p>
         </div>
-        <div id='table_and_icon'>
-            
-        </div>
+        
+        
     </div></main>
     <footer>hello, footer!</footer>
 </body>
