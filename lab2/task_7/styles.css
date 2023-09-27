@@ -1,0 +1,47 @@
+div {
+    color: white;
+    height: 100px;
+    width: 150px;
+}
+
+#a {
+    position: static;
+    background-color: blueviolet;
+}
+
+#b {
+    position: relative;
+    background-color: darkred;
+}
+
+#c {
+    position: relative;
+    top: -2em;
+    left: 2em;
+    background-color: peru;
+}
+
+#d {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: indianred;
+}
+
+#e {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: indigo;
+}
+
+#f {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: #228b22;
+}
