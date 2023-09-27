@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    font-family: 'times new roman';
+}
+
+header {
+    background-color: #eaeaea;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 2.5em;
+    padding: 0.3em;
+}
+
+footer {
+    background-color: black;
+    font-size: 1rem;
+    clear: both;
+    height: 1.5rem;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+#left_column {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: #c8fc98;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+    padding: 0 0.2em 0.5em 0.5em;
+}
+
+#main_column {
+    line-height: 1.5em;
+    padding: 0 0.2em 0.5em 0.5em; /* hello?? create padding please??? */
+    margin-left: 215px;
+}
