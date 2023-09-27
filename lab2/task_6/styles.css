@@ -1,0 +1,9 @@
+div {
+    margin: auto;
+    width: 25%;
+}
+
+#b p {
+    border: blue solid 0.7em;
+    padding: 50px;
+}
