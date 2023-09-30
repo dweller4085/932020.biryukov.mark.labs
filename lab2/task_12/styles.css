@@ -1,0 +1,44 @@
+main {
+    position: relative;
+    margin: 0.2em;
+    padding: 0;
+    border: 1px solid green;
+    background-color: aqua;
+}
+
+#menu {
+    position: absolute;
+    width: 480px;
+    height: 90px;
+    max-height: 90px;
+    background-color: bisque;
+}
+
+#content {
+    margin-left: 480px;
+    background-color: darkgray;
+}
+
+#content > p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #menu {
+        position: static;
+        width: 120px;
+        height: 90px;
+    }
+    
+    #content {
+        width: 75%;
+        margin: 0;
+        background-color: darkgray;
+    }
+}
