@@ -1,0 +1,12 @@
+main {
+    width: 600px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+}
+
+#hamster {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
