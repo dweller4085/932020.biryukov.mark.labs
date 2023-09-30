@@ -1,0 +1,12 @@
+#a {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+#b {
+    clear: left;
+    background-color: bisque;
+}
