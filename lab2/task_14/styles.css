@@ -1,0 +1,41 @@
+main {
+    border: 1px solid #7fbf7f;
+    background-color: aqua;
+}
+
+#menu {
+    float: left;
+    width: 25%;
+    height: 30%;
+    background-color: bisque;
+}
+
+#content {
+    margin-left: 25%;
+    background-color: darkgray;
+}
+
+#content p {
+    margin: 0;
+}
+
+@media (max-width: 700px) { 
+    main {
+        display: inline-block;
+    }
+
+    #menu {	
+        float: none;
+        width: 100%;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+    
+    #content {
+        width: 100%;
+        margin: 0;
+        background-color: darkgray;
+    }
+}
