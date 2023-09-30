@@ -1,0 +1,35 @@
+main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    border: solid green 1px;
+}
+
+#menu {
+    position: absolute;
+    width: 25%;
+    height: 85px;
+    margin: auto;
+    background-color: bisque;
+}
+
+#content {
+    height: 100%;
+    padding: 0;
+    margin: 0 0 0 25%;
+    background-color: darkgray;
+}
+
+img {
+    float: right;
+    width: 50%
+}
+
+#content p {
+    margin: 0;
+}
+
+#content > p {
+    clear: right;
+}
