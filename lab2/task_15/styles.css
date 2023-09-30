@@ -1,0 +1,12 @@
+.inline_block {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    background-color: aquamarine;
+}
+
+#a {
+    width: 100%;
+    background-color: bisque;
+}
