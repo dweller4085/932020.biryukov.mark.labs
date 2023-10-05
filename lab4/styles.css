@@ -27,16 +27,31 @@ header img {
 }
 
 footer {
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
     background-color: white;
     color: #808080;
-    text-align: center;
-    clear: both;
-    line-height: 200%;
-    padding: 0%;
 }
 
 #page {
     margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+#page > #menu_bar {
+    width: 25%;
+}
+
+#page > main {
+    width: 50%;
+}
+
+#page > #info_bar {
+    width: 25%;
 }
 
 @media (width >= 1024px) {
