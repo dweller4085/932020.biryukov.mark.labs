@@ -60,15 +60,6 @@ footer {
     max-width: 100%;
 }
 
-main {
-    width: var(--main-width);
-    min-width: var(--main-width);
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-    padding: 1em 0 1em 0;
-}
-
 #info-bar {
     width: var(--info-bar-width);
     min-width: var(--info-bar-width);
@@ -95,23 +86,6 @@ main {
 #info-bar .info h4 {
     padding: 0;
     margin: 0;
-}
-
-#menu-bar {
-    width: var(--menu-bar-width);
-    min-width: var(--menu-bar-width);
-    margin: 1em 20px 1em 0;
-    color: #2e5473;
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-}
-
-#menu-bar p {
-    margin: 0;
-    padding: 0.5em;
-    display: block;
-    border-radius: 0.25em;
 }
 
 #menu-bar p:hover {
@@ -157,11 +131,53 @@ main {
     padding: 0;
 }
 
-@media (width >= 1115px) {
-    
+main {
+    box-sizing: border-box;
+    width: var(--main-width);
+    min-width: var(--main-width);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 1em 0 1em 0;
 }
 
-@media (715px <= width <= 1115px) {
+@media (width >= 1115px) {
+    #menu-bar {
+        width: var(--menu-bar-width);
+        min-width: var(--menu-bar-width);
+        margin: 1em 20px 1em 1em;
+        color: #2e5473;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+    }
+    
+    #menu-bar p {
+        margin: 0;
+        padding: 0.5em;
+        display: block;
+        border-radius: 0.25em;
+    }
+}
+
+@media (715px <= width < 1115px) {
+    #menu-bar {
+        width: var(--menu-bar-width);
+        min-width: var(--menu-bar-width);
+        margin: 1em 20px 1em 1em;
+        color: #2e5473;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+    }
+    
+    #menu-bar p {
+        margin: 0;
+        padding: 0.5em;
+        display: block;
+        border-radius: 0.25em;
+    }
+    
     #page {
         justify-content: left;
     }
@@ -171,6 +187,29 @@ main {
     }
 }
 
-@media (width <= 715px) {
+@media (width < 715px) {
+    #page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+        align-items: center;
+    }
     
+    #menu-bar {
+        box-sizing: border-box;
+        width: var(--main-width);
+        margin: 1em 20px 1em 1em;
+        color: #2e5473;
+        display: block;
+        text-align: center;
+    }
+    
+    #menu-bar p {
+        margin: 0;
+        padding: 0.5em;
+        display: inline-block;
+        border-radius: 0.25em;
+    }
 }
