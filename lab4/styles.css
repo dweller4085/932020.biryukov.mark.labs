@@ -77,6 +77,25 @@ main {
     row-gap: 1em;
 }
 
+#info-bar .info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+    padding: 0.75em;
+}
+
+#info-bar .info p {
+    margin: 0;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border-radius: 0.25em;
+    background-color: #edeef0;;
+}
+
+#info-bar .info h3 {
+    padding: 0;
+    margin: 0;
+}
+
 #menu-bar {
     width: var(--menu-bar-width);
     margin: 1em 1em 1em 0;
