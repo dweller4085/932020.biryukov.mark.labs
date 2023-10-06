@@ -91,7 +91,7 @@ main {
     background-color: #edeef0;;
 }
 
-#info-bar .info h3 {
+#info-bar .info h4 {
     padding: 0;
     margin: 0;
 }
@@ -100,6 +100,20 @@ main {
     width: var(--menu-bar-width);
     margin: 1em 1em 1em 0;
     color: #2e5473;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+#menu-bar p {
+    margin: 0;
+    padding: 0.5em;
+    display: block;
+    border-radius: 0.25em;
+}
+
+#menu-bar p:hover {
+    background-color: #e1e5eb;
 }
 
 .content-box {
@@ -107,7 +121,38 @@ main {
     border-radius: 0.5em;
     border: 1px solid #d0d0d0;
     display: block;
-    padding: 1em 0.75em 1em 1em;
+    padding: 1em 1em 1em 1em;
+}
+
+.post-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-bottom a {
+    display: block;
+    color: #2e5473;
+}
+
+.post hr {
+    border: 2px solid #d0d0d0;
+    border-radius: 0.125em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.post-content {
+    line-height: 1.25em;
+}
+
+.post-content::selection {
+    color: green;
+    background-color: #d0d0d0;
+}
+
+.post h4 {
+    margin: 0;
+    padding: 0;
 }
 
 @media (width >= 1024px) {
