@@ -71,6 +71,7 @@ main {
 
 #info-bar {
     width: var(--info-bar-width);
+    min-width: var(--info-bar-width);
     margin: 1em 0 1em 200px;
     display: flex;
     flex-direction: column;
@@ -98,7 +99,8 @@ main {
 
 #menu-bar {
     width: var(--menu-bar-width);
-    margin: 1em 1em 1em 0;
+    min-width: var(--menu-bar-width);
+    margin: 1em 20px 1em 0;
     color: #2e5473;
     display: flex;
     flex-direction: column;
@@ -155,14 +157,20 @@ main {
     padding: 0;
 }
 
-@media (width >= 1024px) {
-
-}
-
-@media (700px <= width <= 1024px) {
+@media (width >= 1115px) {
     
 }
 
-@media (width <= 700px) {
+@media (715px <= width <= 1115px) {
+    #page {
+        justify-content: left;
+    }
+    
+    #info-bar {
+        display: none;
+    }
+}
+
+@media (width <= 715px) {
     
 }
