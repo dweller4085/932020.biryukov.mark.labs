@@ -60,3 +60,34 @@ main {
     h2 { margin: 0 0 0.5rem 0; }    
     p { margin: 0; }
 }
+
+#popup-screen {
+    z-index: 255;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-window {
+    width: 33vw;
+    background-color: #f0f0f0;
+    border: solid 1px #d0d0d0;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+        margin: 0 0 1rem 0;
+        align-self: center;
+    }
+    
+    p { margin: 0; }
+}
