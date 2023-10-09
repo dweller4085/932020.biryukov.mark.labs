@@ -10,7 +10,7 @@ const newsArticlesContents = [
 const popupScreen = {
     element: document.getElementById('popup-screen'),
     heading: document.getElementById('popup-window-heading'),
-    contents: document.getElementById('popup-window-content'),
+    contents: document.getElementById('popup-window-contents'),
 };
 
 function closePopup() {
