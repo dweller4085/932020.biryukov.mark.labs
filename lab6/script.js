@@ -5,6 +5,8 @@ function left() {
     dog.style.flex = '1';
     dogImg.style.visibility = 'hidden';
     catImg.style.visibility = 'visible';
+    catImg.style.width = '80%';
+    catImg.style.height = '80%';
 }
 
 function both() {
@@ -12,6 +14,10 @@ function both() {
     dog.style.flex = '1';
     dogImg.style.visibility = 'visible';
     catImg.style.visibility = 'visible';
+    dogImg.style.width = '100%';
+    catImg.style.width = '100%';
+    dogImg.style.height = '60%';
+    catImg.style.height = '60%';
 }
 
 function right() {
@@ -19,6 +25,8 @@ function right() {
     dog.style.flex = '20';
     dogImg.style.visibility = 'visible';
     catImg.style.visibility = 'hidden';
+    dogImg.style.width = '80%';
+    dogImg.style.height = '80%';
 }
 
 [['left-button', left], ['both-button', both], ['right-button', right]].forEach(([id, f]) => {
