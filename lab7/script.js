@@ -1,37 +1,48 @@
-/*
 
-const [displayArea, dog, cat, dogImg, catImg] = ['display-area', 'dog', 'cat', 'dog-img', 'cat-img'].map(id => document.getElementById(id));
+const [count_min, count_max] = [1, 10];
+const [size_min, size_max] = [30, 80];
+const canvas = document.getElementById('canvas');
 
-function left() {
-    cat.style.flex = '20';
-    dog.style.flex = '1';
-    dogImg.style.visibility = 'hidden';
-    catImg.style.visibility = 'visible';
-    catImg.style.width = '80%';
-    catImg.style.height = '80%';
+function square(size, pos) {
+    let square = document.createElement('div');
+    
 }
 
-function both() {
-    cat.style.flex = '1';
-    dog.style.flex = '1';
-    dogImg.style.visibility = 'visible';
-    catImg.style.visibility = 'visible';
-    dogImg.style.width = '100%';
-    catImg.style.width = '100%';
-    dogImg.style.height = '60%';
-    catImg.style.height = '60%';
+function triangle(size, pos) {
+    let triangle = document.createElement('div');
 }
 
-function right() {
-    cat.style.flex = '1';
-    dog.style.flex = '20';
-    dogImg.style.visibility = 'visible';
-    catImg.style.visibility = 'hidden';
-    dogImg.style.width = '80%';
-    dogImg.style.height = '80%';
+function circle(size, pos) {
+    let circle = document.createElement('div');
 }
 
-[['left-button', left], ['both-button', both], ['right-button', right]].forEach(([id, f]) => {
-    document.getElementById(id).addEventListener('click', f);
-});
-*/
+function place(figure) {
+    const random_size = _ => (
+        size_min + Math.floor(Math.random() * (size_max - size_min))
+    );
+    
+    const random_pos = _ => [
+        Math.floor(Math.random() * canvas.clientWidth),
+        Math.floor(Math.random() * canvas.clientHeight),
+    ];
+    
+    const count = Number(document.getElementById('place-count').value);
+    
+    if (count < count_min || count > count_max) {
+        console.error('invalid count value');
+        return null;
+    }
+    
+    // think
+    
+    [...Array(count)].forEach(_ => {
+        const element = figure(random_size(), random_pos());
+    });
+}
+
+[
+    ['button-square',   _ => place(square)  ],
+    ['button-triangle', _ => place(triangle)],
+    ['button-circle',   _ => place(circle)  ],
+]
+.forEach(([id, f]) => document.getElementById(id).addEventListener('click', f));

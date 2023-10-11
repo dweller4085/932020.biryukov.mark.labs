@@ -44,10 +44,12 @@ main {
 }
 
 #controls button {
+    box-sizing: border-box;
     width: 3.5rem;
 }
 
 #controls input {
-    padding: 2px 3px;
+    padding: 0 0 0 5px;
     width: 3.5rem;
+    box-sizing: border-box;
 }
