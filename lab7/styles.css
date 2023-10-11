@@ -23,10 +23,20 @@ body {
     border-radius: 3px;
     padding: 0.5rem;
     background-color: #f4f4f4;
+    height: fit-content;
 }
 
 main {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+main canvas {
+    width: 1024px;
+    height: 768px;
+    overflow: clip;
 }
 
 #controls {
@@ -47,4 +57,5 @@ main {
 
 #controls input {
     padding: 2px 3px;
+    width: 3.5rem;
 }
