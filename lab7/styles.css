@@ -1,0 +1,50 @@
+:root {
+    font-family: 'arial', sans-serif;
+    font-size: medium;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5rem;
+    display: block flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    background-color: #fefefe;
+}
+
+#controls, main {
+    border: solid 1px #d0d0d0;
+    border-radius: 3px;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+}
+
+main {
+    flex: 1;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: start;
+}
+
+#controls button, input {
+    border: solid 1px #a0a0a0;
+    border-radius: 3px;
+}
+
+#controls button {
+    width: 3.5rem;
+}
+
+#controls input {
+    padding: 2px 3px;
+}
