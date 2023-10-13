@@ -28,7 +28,6 @@ body {
 
 main {
     flex: 1;
-    padding: 4rem;
 }
 
 #controls {
@@ -49,7 +48,32 @@ main {
 }
 
 #controls input {
-    padding: 0 0 0 5px;
+    padding: 0 0 0 3px;
     width: 3.5rem;
     box-sizing: border-box;
+}
+
+.shape {
+    overflow: hidden;
+    opacity: 85%;
+    position: absolute;
+    border: solid 1px #202020;
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    background-color: #7af14b;
+}
+
+.triangle {
+    background-color: #f14646;
+}
+
+.circle {
+    background-color: #4edcff;
+}
+
+.selected {
+    background-color: #fff45d;
 }
