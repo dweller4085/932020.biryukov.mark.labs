@@ -57,23 +57,25 @@ main {
     overflow: hidden;
     opacity: 85%;
     position: absolute;
-    border: solid 1px #202020;
-    margin: 0;
-    padding: 0;
 }
 
 .square {
     background-color: #7af14b;
+    border: solid 1px #202020;
 }
 
 .triangle {
-    background-color: #f14646;
+    width: 0;
+    height: 0;
 }
 
 .circle {
     background-color: #4edcff;
+    border-radius: 50%;
+    border: solid 1px #202020;
 }
 
 .selected {
     background-color: #fff45d;
+    
 }

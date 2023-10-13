@@ -11,16 +11,36 @@ function shape(size, [x, y], type) {
     
     shape.classList.add('shape', type);
     
-    shape.style.width = size + 'px';
-    shape.style.height = size + 'px';
+    if (type === 'triangle') {
+        // mhmm triangle is so special
+        shape.style.width = '0';
+        shape.style.height = '0';
+        shape.style.borderLeft = size / 1.5 + 'px solid transparent';
+        shape.style.borderRight = size / 1.5 + 'px solid transparent';
+        shape.style.borderBottom = size / 1.5 + 'px solid #f14646';
+    }
+    
+    else {
+        shape.style.width = size + 'px';
+        shape.style.height = size + 'px';
+    }
+    
     shape.style.left = x + 'px';
     shape.style.top = y + 'px';
+    
+
 
     return shape;
 }
 
 function shape_on_click(e) {
-    this.classList.add('selected');
+    // mhmm triangle is so special
+    if (this.classList.contains('triangle')) {
+        this.style.borderBottomColor = '#fff45d';
+    } else {
+        this.classList.add('selected');
+    }
+    
     this.onclick = e => this.remove();
 }
 
