@@ -1,0 +1,79 @@
+:root {
+    font-family: 'arial', sans-serif;
+    font-size: medium;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0.5rem;
+    display: block flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    background-color: #fefefe;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+table {
+    border-spacing: 0.5rem;
+}
+
+thead td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #808080;
+    border-radius: 3px;
+    text-align: end;
+    padding: 0 0.75rem;
+    font-size: larger;
+    max-width: 276px;
+    box-sizing: content-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #e4ce0a;
+    background-color: #405c00;
+    user-select: none;
+}
+
+tbody td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #c0c0c0;
+    border-radius: 3px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #404040;
+    background-color: #fafafa;
+    user-select: none;
+}
+
+button {
+    border: solid 1px #c0c0c0;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+tbody td:hover {
+    background-color: #e6e6e6;
+}
+
+tbody td:active {
+    background-color: #d8d8d8;
+}
+
+#app {
+    border: solid 1px #d0d0d0;
+    border-radius: 3px;
+    
+    background-color: #f4f4f4;
+}
