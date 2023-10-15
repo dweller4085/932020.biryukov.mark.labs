@@ -11,6 +11,7 @@ html, body {
 body {
     height: 100vh;
     box-sizing: border-box;
+    background-color: black;
 }
 
 #curtains {
@@ -25,7 +26,7 @@ body {
     background-clip: border-box;
     background-position: center;
     overflow-x: hidden;
-    transition: top 500ms;
+    transition: top 0.2s;
     z-index: 256;
 }
 
@@ -36,5 +37,61 @@ body {
 #stage {
     height: 100%;
     box-sizing: border-box;
-    background-color: black;
+    opacity: 0%;
+    transition: opacity 0.2s;
+}
+
+#stage * {
+    position: absolute;
+}
+
+#lamp {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: calc(50% - 105px);
+}
+
+#wizard {
+    z-index: 1;
+    top: 45%;
+    left: calc(50% - 600px);
+}
+
+#hat-container {
+    top: 65%;
+    left: calc(50% + 100px);
+}
+
+#hat {
+    z-index: 2;
+}
+
+#dove {
+    z-index: 1;
+    left: 40px;
+    top: 0px;
+    transition: top 0.5s;
+}
+
+#rabbit {
+    z-index: 1;
+    left: 40px;
+    top: -200px;
+    transition: top 0.5s;
+}
+
+#light {
+    z-index: 3;
+    left: 0%;
+    top: 150px;
+    pointer-events: none;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: calc(100vh - 150px) solid #ffd448;
+    opacity: 50%;
+}
+
+img {
+    user-select: none;
 }
