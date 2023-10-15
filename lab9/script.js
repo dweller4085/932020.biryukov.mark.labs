@@ -80,7 +80,7 @@ function evaluate() {
         case t_state.expr_input: {
             try {
                 let result = eval(ans + usr);
-                if (!usr.includes('//') && result && typeof result == "number") {
+                if (!usr.includes('//') && result != null && result != undefined && typeof result == "number") {
                     set_ans(String(result));
                     set_usr('');
                     set_err('');
