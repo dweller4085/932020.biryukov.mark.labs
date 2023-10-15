@@ -16,9 +16,17 @@ element.lamp.addEventListener('click', (() => {
     return e => element.stage.style.opacity = (lights_on = !lights_on) ? '100%' : '0%';
 })());
 
-element.hat.addEventListener('click', (() => {
-    let current = 'rabbit';
-    return e => {
-        
-    };
-})());
+(() => {
+    let toggle = false; // false: rabbit, true: dove
+
+    [element.dove, element.rabbit, element.hat]
+    .forEach(e => e.addEventListener('click', e => {
+        if (toggle = !toggle) {
+            element.rabbit.style.top = '0px';
+            element.dove.style.top = '-200px';
+        } else {
+            element.dove.style.top = '0px';
+            element.rabbit.style.top = '-200px';
+        }
+    }));
+})();
