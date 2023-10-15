@@ -1,0 +1,17 @@
+:root {
+    font-family: 'arial', sans-serif;
+    font-size: medium;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #fefefe;
+}
