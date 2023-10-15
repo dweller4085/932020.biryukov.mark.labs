@@ -9,14 +9,11 @@ html, body {
 }
 
 body {
-    padding: 0.5rem;
     display: block flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 0.5rem;
     background-color: #fefefe;
-    box-sizing: border-box;
     height: 100vh;
 }
 
@@ -24,7 +21,7 @@ table {
     border-spacing: 0.5rem;
 }
 
-thead td {
+#display {
     width: 50px;
     height: 50px;
     border: solid 1px #808080;
@@ -34,14 +31,16 @@ thead td {
     font-size: larger;
     max-width: 276px;
     box-sizing: content-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    direction: rtl;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
-    color: #e4ce0a;
     background-color: #405c00;
     user-select: none;
+    letter-spacing: 2px;
+}
+
+#display-wrap {
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 tbody td {
@@ -57,12 +56,6 @@ tbody td {
     user-select: none;
 }
 
-button {
-    border: solid 1px #c0c0c0;
-    border-radius: 3px;
-    background-color: #fafafa;
-}
-
 tbody td:hover {
     background-color: #e6e6e6;
 }
@@ -74,6 +67,17 @@ tbody td:active {
 #app {
     border: solid 1px #d0d0d0;
     border-radius: 3px;
-    
     background-color: #f4f4f4;
+}
+
+#ans {
+    color: #e2e2e2;
+}
+
+#usr {
+    color: #ffec3e;
+}
+
+#err {
+    color: #ec0b0b
 }
