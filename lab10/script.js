@@ -1,7 +1,7 @@
 
 const element = (() => {
     let element = {};
-    ['light', 'rabbit', 'dove', 'wizard', 'hat', 'lamp', 'curtains', 'stage']
+    ['rabbit', 'dove', 'hat', 'lamp', 'curtains', 'stage']
     .forEach(id => element[id] = document.getElementById(id));
     return element;
 })();
@@ -21,12 +21,7 @@ element.lamp.addEventListener('click', (() => {
 
     [element.dove, element.rabbit, element.hat]
     .forEach(e => e.addEventListener('click', e => {
-        if (toggle = !toggle) {
-            element.rabbit.style.top = '0px';
-            element.dove.style.top = '-200px';
-        } else {
-            element.dove.style.top = '0px';
-            element.rabbit.style.top = '-200px';
-        }
+        [element.rabbit.style.top, element.dove.style.top] =
+        (toggle = !toggle) ? ['0px', '-200px'] : ['-200px', '0px'];
     }));
 })();
